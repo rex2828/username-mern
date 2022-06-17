@@ -22,7 +22,7 @@ const Signup = () => {
         username: name,
         password,
       }
-      const rawResponse = await fetch('http://localhost:8080/api/signup', {
+      const rawResponse = await fetch('/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
