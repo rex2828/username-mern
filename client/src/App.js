@@ -41,7 +41,7 @@ function App() {
   }
 
   const onClickReadMore = async (idx,page) => {
-    const res = await fetch(`https://randomuser.me/api/?page=${page}&results=10&seed=aaa`)
+    const res = await fetch(`https://randomuser.me/api/?page=${page+1}&results=10&seed=aaa`)
     const jsonData = await res.json()
     setModalVisible(true)
     setEditUser(jsonData.results[idx])
