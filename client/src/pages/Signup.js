@@ -22,7 +22,7 @@ const Signup = () => {
         username: name,
         password,
       }
-      const rawResponse = await fetch('https://randomuser-mern.herokuapp.com/api/signup', {
+      const rawResponse = await fetch('/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

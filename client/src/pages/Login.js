@@ -20,7 +20,7 @@ const Login = (props) => {
         email,
         password,
       }
-      const rawResponse = await fetch('https://randomuser-mern.herokuapp.com/api/login', {
+      const rawResponse = await fetch('/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
